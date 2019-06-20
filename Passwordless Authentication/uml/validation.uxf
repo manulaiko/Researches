@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLSpecialState</id>
@@ -25,12 +26,13 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>460</x>
+      <x>390</x>
       <y>160</y>
-      <w>40</w>
+      <w>180</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>type=decision</panel_attributes>
+    <panel_attributes>type=decision
+SessionID exists?</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -38,11 +40,11 @@
     <coordinates>
       <x>470</x>
       <y>190</y>
-      <w>140</w>
+      <w>50</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[sessionID exists]</panel_attributes>
+m2=Yes</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -50,12 +52,12 @@ m2=[sessionID exists]</panel_attributes>
     <coordinates>
       <x>260</x>
       <y>170</y>
-      <w>220</w>
+      <w>150</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[sessionID not found]</panel_attributes>
-    <additional_attributes>10.0;10.0;200.0;10.0</additional_attributes>
+m2=No</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
@@ -71,12 +73,13 @@ m2=[sessionID not found]</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>460</x>
+      <x>380</x>
       <y>260</y>
-      <w>40</w>
+      <w>200</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>type=decision</panel_attributes>
+    <panel_attributes>type=decision
+Matches original IP</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -84,12 +87,12 @@ m2=[sessionID not found]</panel_attributes>
     <coordinates>
       <x>120</x>
       <y>270</y>
-      <w>360</w>
+      <w>280</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[Request IP differs from sessionID original IP]</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0;340.0;10.0</additional_attributes>
+m2=No</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0;260.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
@@ -129,22 +132,23 @@ m2=[Request IP differs from sessionID original IP]</panel_attributes>
     <coordinates>
       <x>470</x>
       <y>290</y>
-      <w>110</w>
+      <w>50</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[IP Matches]</panel_attributes>
+m2=Yes</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>460</x>
+      <x>390</x>
       <y>360</y>
-      <w>40</w>
+      <w>180</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>type=decision</panel_attributes>
+    <panel_attributes>type=decision
+Is expired?</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -152,23 +156,23 @@ m2=[IP Matches]</panel_attributes>
     <coordinates>
       <x>270</x>
       <y>370</y>
-      <w>210</w>
+      <w>140</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[sessionID expired]</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;10.0</additional_attributes>
+m2=Yes</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>470</x>
       <y>390</y>
-      <w>150</w>
+      <w>50</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-m2=[sessionID is valid]</panel_attributes>
+m2=No</panel_attributes>
     <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
